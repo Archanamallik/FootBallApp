@@ -1,0 +1,71 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Europe",
+      "code": "EU"
+    },
+    {
+      "id": 2,
+      "name": "Asia",
+      "code": "AS"
+    },
+    {
+      "id": 3,
+      "name": "Africa",
+      "code": "AF"
+    },
+    {
+      "id": 4,
+      "name": "Oceania",
+      "code": "OC"
+    },
+    {
+      "id": 5,
+      "name": "Antarctica",
+      "code": "AT"
+    },
+    {
+      "id": 6,
+      "name": "North America",
+      "code": "NA"
+    },
+    {
+      "id": 7,
+      "name": "South America",
+      "code": "SA"
+    }
+  ],
+  "pagination": {
+    "count": 7,
+    "per_page": 25,
+    "current_page": 1,
+    "next_page": null,
+    "has_more": false
+  },
+  "subscription": [
+    {
+      "meta": [],
+      "plans": [
+        {
+          "plan": "Football Free Plan",
+          "sport": "Football",
+          "category": "Standard"
+        },
+        {
+          "plan": "Cricket Free Plan",
+          "sport": "Cricket",
+          "category": "Standard"
+        }
+      ],
+      "add_ons": [],
+      "widgets": []
+    }
+  ],
+  "rate_limit": {
+    "resets_in_seconds": 1499,
+    "remaining": 2995,
+    "requested_entity": "Continent"
+  },
+  "timezone": "UTC"
+}

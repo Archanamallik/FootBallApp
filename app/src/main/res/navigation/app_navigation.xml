@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/continentsFragment">
+    <fragment
+        android:id="@+id/countriesFragment"
+        android:name="com.example.footballdetails.ui.fragments.CountriesFragment"
+        android:label="fragment_countries"
+        tools:layout="@layout/fragment_countries" >
+        <action
+            android:id="@+id/action_countriesFragment_to_leaguesFragment"
+            app:destination="@id/leaguesFragment" />
+        <action
+            android:id="@+id/action_countriesFragment_to_teamFragment"
+            app:destination="@id/teamFragment" />
+        <action
+            android:id="@+id/action_countriesFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaguesFragment"
+        android:name="com.example.footballdetails.ui.fragments.LeaguesFragment"
+        android:label="fragment_leagues"
+        tools:layout="@layout/fragment_leagues" />
+    <fragment
+        android:id="@+id/continentsFragment"
+        android:name="com.example.footballdetails.ui.fragments.ContinentsFragment"
+        android:label="fragment_continents"
+        tools:layout="@layout/fragment_continents" >
+        <action
+            android:id="@+id/action_continentsFragment_to_countriesFragment"
+            app:destination="@id/countriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="com.example.footballdetails.ui.fragments.TeamFragment"
+        android:label="TeamFragment" >
+        <action
+            android:id="@+id/action_teamFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.example.footballdetails.ui.fragments.PlayerFragment"
+        android:label="PlayerFragment" />
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.livesoccer.ui.fragments.ScheduleFragment"
+        android:label="ScheduleFragment" />
+</navigation>
